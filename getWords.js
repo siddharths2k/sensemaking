@@ -1,3 +1,4 @@
+require('string')
 
 var getWords = function(titles)
 {
