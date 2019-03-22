@@ -13,7 +13,7 @@ var getWords = function(titles)
 		// Convert to lower case
 		var edited_title = title.toLowerCase();
 		// Select only lower case characters and spaces
-		edited_title = title.match(/[a-z]\s/g);
+		edited_title = edited_title.match(/[a-z]\s/g);
 		// Remove extra spaces at start and end
 		edited_title = edited_title.trim();
 		// Return array of words
