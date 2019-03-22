@@ -1,11 +1,21 @@
+const cheerio = require('cheerio')
+const $ = cheerio.load(mitcourses)
 
-var getTitles = function(mitcourses){
-
+var getTitles = function(mitcourses)
+{
 	// -----------------------------------
-	//  YOUR CODE
-	//  Get the course titles
-	//  Return array of course titles
+	//  This function gets the course data 
+	//  from mitcourses.js and returns
+	//  an array of course titles
 	// -----------------------------------	
+
+	titles = [];
+
+	// Read values from 'h3' of HTML and append to 'titles'
+	$('h3').each(function(i,course)
+	{
+		titles.push($(course).text());
+	});
 
 	return titles;
 }
