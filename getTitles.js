@@ -1,5 +1,4 @@
 const cheerio = require('cheerio')
-const $ = cheerio.load(mitcourses)
 
 var getTitles = function(mitcourses)
 {
@@ -8,6 +7,8 @@ var getTitles = function(mitcourses)
 	//  from mitcourses.js and returns
 	//  an array of course titles
 	// -----------------------------------	
+
+	const $ = cheerio.load(mitcourses);
 
 	titles = [];
 
