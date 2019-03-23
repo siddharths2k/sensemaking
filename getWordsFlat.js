@@ -2,7 +2,7 @@
 var getWordsFlat = function(words){
 
 	// -----------------------------------
-	//  This function obtains a list of
+	//  This function returns a list of
 	// 	words in all course titles
 	// -----------------------------------	
 
